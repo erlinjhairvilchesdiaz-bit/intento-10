@@ -472,24 +472,23 @@ body {
   border-radius:12px;
 }
 
-.producto-info{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
+/* ===== RESPONSIVE PERSONALIZAR (MÓVIL) ===== */
+@media (max-width: 768px) {
+
+  .personalizar-layout {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .personalizar-img img {
+    width: 100%;
+    height: auto;
+    max-height: 260px;
+  }
+
+  .personalizar-info {
+    width: 100%;
+  }
+
 }
-
-/* Desktop */
-@media (min-width:768px){
-  .producto-card{
-    flex-direction:row;
-  }
-
-  .producto-card img{
-    width:45%;
-  }
-
-  .producto-info{
-    width:55%;
-  }
-}
-
