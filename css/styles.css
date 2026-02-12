@@ -458,3 +458,38 @@ body {
   background: #444;
 }
 
+.producto-card{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.producto-card img{
+  width:100%;
+  height:auto;
+  max-height:260px;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+.producto-info{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+/* Desktop */
+@media (min-width:768px){
+  .producto-card{
+    flex-direction:row;
+  }
+
+  .producto-card img{
+    width:45%;
+  }
+
+  .producto-info{
+    width:55%;
+  }
+}
+
