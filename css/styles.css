@@ -195,7 +195,7 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
 }
 
 .personalizar-info h2 {
@@ -499,5 +499,6 @@ body {
     width: 100%;
   }
 }
+
 
 
