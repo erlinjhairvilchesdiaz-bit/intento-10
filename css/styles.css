@@ -472,23 +472,32 @@ body {
   border-radius:12px;
 }
 
-/* ===== RESPONSIVE PERSONALIZAR (MÓVIL) ===== */
-@media (max-width: 768px) {
+/* ===== FIX PERSONALIZAR MÓVIL (FORZADO) ===== */
+@media screen and (max-width: 768px) {
+
+  #pantalla-personalizar {
+    align-items: flex-start;
+  }
 
   .personalizar-layout {
-    flex-direction: column;
-    max-width: 100%;
-    padding: 20px;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .personalizar-img {
+    width: 100%;
   }
 
   .personalizar-img img {
-    width: 100%;
-    height: auto;
-    max-height: 260px;
+    width: 100% !important;
+    height: auto !important;
+    display: block;
   }
 
   .personalizar-info {
     width: 100%;
   }
-
 }
+
+
